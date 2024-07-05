@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                form
+        </title>
+        <style>
+            .container{
+                background-color: rgb(213, 220, 227);
+                height: 1000px;
+                width: 900px;
+                margin-top: 50px;
+                margin-left: 300px;
+                margin-right: 300px;
+                border-radius: 50px;
+            }
+            h1{
+                font-family: Verdana;
+                font-style: italic;
+                padding-left: 350px;
+            }
+            .box{
+                border-bottom: 5px dotted;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .grid-item{
+                text-align: left;
+                padding-left: 100px;
+                font-family: Verdana;
+                font-size: large;
+            }
+            .l1{
+                height: 30px;
+                width: 250px;
+                margin-top: 10px;
+                border-radius: 10px;
+                font-size:15px;
+            }
+            .grid2{
+                text-align: left;
+                padding-top: 50px;
+                padding-left: 100px;
+                font-family: Verdana;
+                font-size: large;
+                margin-bottom: 50px;
+            }
+            .l2{
+                height: 35px;
+                width: 700px;
+                margin-top: 10px;
+                border-radius: 10px;
+                font-size:15px;
+            }
+            .label1{
+                padding-left: 60px;
+            }
+            .l3{
+              margin-left: -120px;
+            }
+            .grid3{
+                text-align: left;
+                padding-top: 15px;
+                font-family: Verdana;
+                font-size: large;
+                margin-left: 10px;
+            }
+            .l4{
+                height: 70px;
+                width: 700px;
+                margin-top: 10px;
+                border-radius: 10px;
+                font-size:15px;
+            }
+            .l5{
+                height: 40px;
+                width: 90px;
+                border-radius: 10px;
+                font-size:20px;
+                margin-top: -5px;
+                margin-left: 310px;
+            }
+            .grid4{
+                text-align: left;
+                padding-top: 10px;
+                padding-left: 100px;
+                font-family: Verdana;
+                font-size: large;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <div class="box">
+                <h1>
+                    Application
+                </h1>
+            </div>
+            <br>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="f_name">First name</label><br>
+                    <input class="l1" type="text" id="f_name" name="f_name" value="John">
+                </div>
+                <div class="grid-item">
+                    <label for="l_name">Last name</label><br>
+                    <input class="l1" type="text" id="l_name" name="l_name" value="Doe">
+                </div>
+            </div>
+            <div class="grid2">
+                <label for="e-mail">E-mail</label><br>
+                <input class="l2" type="email" id="e-mail" name="e-mail" value="example@domain.com">
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="dob">Date of Birth</label><br>
+                    <input class="l1" type="date" id="dob" name="dob">
+                </div>
+                <div class="grid-item">
+                    <label class="l3" class="label1" for="gender">Gender</label><br>
+                    <div class="grid-container">
+                        <div class="grid3">
+                            <input class="l3" type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="grid3">
+                            <input class="l3" type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid2">
+                <label for="address">Address</label><br>
+                <input class="l2" type="text" id="address" name="address" value="EX:No10,5th cross st,Queens">
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="FOS">Field of Study:</label><br>
+                    <select class="l1" name="Fields" id="FOS">
+                        <option value="CS">Computer Science</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="DS">Data Science</option>
+                        <option value="ML">Machine Learning</option>
+                    </select>
+                </div>
+                <div class="grid-item">
+                    <label for="FOI">Field of Interest:</label><br>
+                    <select class="l1" name="Interests" id="FOI">
+                        <option value="IOT">IOT</option>
+                        <option value="CyS">Cyber Security</option>
+                        <option value="W3">Web 3</option>
+                        <option value="AI">Artificial Intelligence</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid2">
+                <label for="about">About Yourself</label><br>
+                <textarea class="l4" id="about" name="about" rows="4" cols="50"></textarea>
+            </div>
+            <div class="grid4">
+                <input class="l5" type="button" value="Submit">
+            </div>
+        </div>
+    </body>
+</html>
