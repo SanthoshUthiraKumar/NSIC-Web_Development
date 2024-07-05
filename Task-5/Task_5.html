@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Grid
+        </title>
+        <style>
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                padding: 30px;
+                height:800px;
+                width: 800px;
+                background-color: rgb(51, 209, 157);
+                margin-left: 300px;
+                margin-top: 50px;
+                margin-bottom:50px;
+                border-radius: 20px;
+            }
+            .grid-item{
+                border: 5px solid  ;
+                border-color:aquamarine;
+                background-color: white;
+                margin: 10px;
+                border-radius: 20px;
+                height: 230px;
+                width: 225px;
+                display: flex;
+            }
+            .grid-item1{
+                background-color: rgb(51, 209, 157);
+                margin: 10px;
+                height: 230px;
+                width: 225px;
+            }
+           img{
+                height: 230px;
+                width: 225px;
+                object-fit: cover;
+            }
+            h1{
+                font-size: 50px;
+                margin-left: 660px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Grid
+        </h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Assests/dark.jpeg" alt="dark" >
+            </div>
+            <div class="grid-item1"></div>
+            <div class="grid-item">
+                <img src="Assests/witcher.jpg" alt="witcher" >
+            </div>
+            <div class="grid-item1"></div>
+            <div class="grid-item">
+                <img src="Assests/boys1.jpg" alt="boys" >
+            </div>
+            <div class="grid-item1"></div>
+            <div class="grid-item">
+                <img src="Assests/sea.jpg" alt="sea" >
+            </div>
+            <div class="grid-item1"></div>
+            <div class="grid-item">
+                <img src="Assests\Alice.jpg" alt="Alice" >
+            </div>
+        </div>
+    </body>
+</html>
